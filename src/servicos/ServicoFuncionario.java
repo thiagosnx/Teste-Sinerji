@@ -51,18 +51,21 @@ public class ServicoFuncionario {
         );
     }
     public void retornaFuncionarioCompleto(){
+        Double salarioTotal = 0.00;
         for (Funcionario funcionario : funcionarios){
+            salarioTotal += servicoCalculaSalario.calculaSalario(funcionario.getCargo());
             System.out.println(
-                    "Nome: " + funcionario.getNome() + "\n" +
+                            "Nome: " + funcionario.getNome() + "\n" +
                             "Cargo: " + funcionario
                             .getCargo()
                             .getClass()
                             .getSimpleName() + "\n" +
                             "Anos de Casa: " + funcionario.getAnosServico() + "\n" +
-                            "Salario Total: " + servicoCalculaSalario.calculaSalario(funcionario.getCargo()) + "\n"
+                            "Salário do Funcionário: " + servicoCalculaSalario.calculaSalario(funcionario.getCargo()) + "\n"
 
             );
         }
+        System.out.println("Valor total pago em salário e benefícios aos funcionários: " + salarioTotal + "\n");
     }
 
 

@@ -54,9 +54,9 @@ public class Main {
         int opcao = 0;
         while(opcao != 6){
             System.out.println("Escolha uma opção:");
-            System.out.println("1. Ver lista dos funcionários e seus respectivos salários e benefícios.");
-            System.out.println("2. Ver lista dos funcionários e seus salários sem benefícios.");
-            System.out.println("3. Ver lista somente dos funcionários que recebem benefícios");
+            System.out.println("1. Ver lista dos funcionários, seus respectivos salários e benefícios e o valor total pago a eles.");
+            System.out.println("2. Ver lista dos funcionários, seus salários e o valor total pago a eles excluídos os benefícios.");
+            System.out.println("3. Ver lista somente dos funcionários que recebem benefícios e o valor total pago a eles em benefícios no mês");
             System.out.println("4. Ver funcionário que recebeu maior salário no mês.");
             System.out.println("5. Ver funcionário que recebeu a maior quantia em benefícios no mês.");
             System.out.println("6. Ver funcionário que mais vendeu no mês.");
