@@ -6,6 +6,7 @@ public class Secretario extends Cargo{
         super(7000.00);
     }
 
+    @Override
     public Double calculaBeneficio(){
         Double base = this.getSalario() + calculaAnosServico();
         return base * 0.20;
@@ -18,5 +19,9 @@ public class Secretario extends Cargo{
     @Override
     public Double calculaSalario(){
         return this.getSalario() + calculaAnosServico() + calculaBeneficio();
+    }
+
+    @Override public Double calculaSalarioSemBeneficio(){
+        return this.getSalario() + calculaAnosServico();
     }
 }

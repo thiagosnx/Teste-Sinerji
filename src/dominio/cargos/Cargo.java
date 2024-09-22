@@ -8,6 +8,8 @@ public abstract class Cargo {
     }
 
 
+    public abstract Double calculaBeneficio();
+
     public abstract Double calculaAnosServico();
 
     public abstract Double calculaSalario();
@@ -21,4 +23,6 @@ public abstract class Cargo {
     public long getAnosServico(){
         return anosServico;
     }
+
+    public abstract Double calculaSalarioSemBeneficio();
 }

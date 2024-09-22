@@ -17,7 +17,7 @@ public class Vendedor extends Cargo {
         return this.getAnosServico() * 1800.00;
     }
 
-    private Double calculaVendas(){
+    public Double calculaBeneficio(){
         return totalVendido * 0.30;
     }
 
@@ -30,6 +30,11 @@ public class Vendedor extends Cargo {
 
     @Override
     public Double calculaSalario(){
-        return this.getSalario() + calculaAnosServico() + calculaVendas();
+        return this.getSalario() + calculaAnosServico() + calculaBeneficio();
+    }
+
+    @Override
+    public Double calculaSalarioSemBeneficio() {
+        return this.getSalario() + calculaAnosServico();
     }
 }
