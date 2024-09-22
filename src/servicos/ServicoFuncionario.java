@@ -52,10 +52,10 @@ public class ServicoFuncionario {
     }
     public void retornaFuncionarioCompleto(){
         Double salarioTotal = 0.00;
+        System.out.println("Salário dos funcionários com benefícios: " + "\n");
         for (Funcionario funcionario : funcionarios){
             salarioTotal += servicoCalculaSalario.calculaSalario(funcionario.getCargo());
             System.out.println(
-                            "Salário dos funcionários com benefícios: " + "\n" +
                             "Nome: " + funcionario.getNome() + "\n" +
                             "Cargo: " + funcionario
                             .getCargo()
@@ -70,10 +70,10 @@ public class ServicoFuncionario {
     }
     public void retornaFuncionarioSemBeneficio(){
         Double salarioTotal = 0.00;
+        System.out.println("Salário dos funcionários sem benefícios: " + "\n");
         for (Funcionario funcionario : funcionarios){
             salarioTotal += servicoCalculaSalario.calculaSalarioSemBeneficios(funcionario.getCargo());
             System.out.println(
-                            "Salário dos funcionários sem benefícios: " + "\n" +
                             "Nome: " + funcionario.getNome() + "\n" +
                             "Cargo: " + funcionario
                             .getCargo()
@@ -89,11 +89,11 @@ public class ServicoFuncionario {
     }
     public void retornaBeneficioFuncionario(){
         Double salarioTotal = 0.00;
+        System.out.println("Benefícios dos funcionários: " + "\n");
         for (Funcionario funcionario : funcionarios){
             if(servicoCalculaSalario.calculaBeneficio(funcionario.getCargo()) != null){
                 salarioTotal += servicoCalculaSalario.calculaBeneficio(funcionario.getCargo());
                 System.out.println(
-                        "Benefício dos funcionários: " + "\n" +
                         "Nome: " + funcionario.getNome() + "\n" +
                                 "Cargo: " + funcionario
                                 .getCargo()
