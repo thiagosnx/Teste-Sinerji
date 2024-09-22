@@ -7,8 +7,8 @@ public class Vendedor extends Cargo {
         return totalVendido;
     }
 
-    public Vendedor(int anosServico, Double totalVendido){
-        super(12000.00, anosServico);
+    public Vendedor(Double totalVendido){
+        super(12000.00);
         this.totalVendido = totalVendido;
     }
 

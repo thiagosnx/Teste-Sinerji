@@ -2,8 +2,8 @@ package dominio.cargos;
 
 public class Secretario extends Cargo{
 
-    public Secretario(int anosServico) {
-        super(7000.00, anosServico);
+    public Secretario() {
+        super(7000.00);
     }
 
     public Double calculaBeneficio(){

@@ -1,8 +1,8 @@
 package dominio.cargos;
 
 public class Gerente extends Cargo{
-    public Gerente(int anosServico){
-        super(20000.00, anosServico);
+    public Gerente(){
+        super(20000.00);
     }
 
     @Override

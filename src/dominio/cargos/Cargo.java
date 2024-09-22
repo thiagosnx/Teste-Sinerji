@@ -2,11 +2,11 @@ package dominio.cargos;
 
 public abstract class Cargo {
     private Double salario;
-    private int anosServico;
-    public Cargo(Double salario, int anosServico){
+    private long anosServico;
+    public Cargo(Double salario){
         this.salario = salario;
-        this.anosServico = anosServico;
     }
+
 
     public abstract Double calculaAnosServico();
 
@@ -14,7 +14,11 @@ public abstract class Cargo {
     public Double getSalario(){
         return salario;
     }
-    public int getAnosServico(){
+
+    public void setAnosServico(long anos){
+        this.anosServico = anos;
+    }
+    public long getAnosServico(){
         return anosServico;
     }
 }
