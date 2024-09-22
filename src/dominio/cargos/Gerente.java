@@ -7,11 +7,11 @@ public class Gerente extends Cargo{
 
     @Override
     public Double calculaAnosServico() {
-        return null;
+        return this.getAnosServico() * 3000.00;
     }
 
     @Override
     public Double calculaSalario(){
-        return this.getSalario();
+        return this.getSalario() + calculaAnosServico();
     }
 }
