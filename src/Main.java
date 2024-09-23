@@ -14,42 +14,7 @@ public class Main {
         List<Funcionario> funcionarios = new ArrayList<>();
         ServicoFuncionario servicoFuncionario = new ServicoFuncionario();
         servicoFuncionario.criaFuncionarios();
-        funcionarios.add(
-                new Funcionario(1
-                , "Jorge Carvalho"
-                , new Secretario()
-                , "2018-01-01")
-        );
-        funcionarios.add(
-                new Funcionario(2
-                        , "Maria Souza"
-                        , new Secretario()
-                        , "2015-12-01")
-        );
-        funcionarios.add(
-                new Funcionario(1
-                        , "Ana Silva"
-                        , new Vendedor(26250.00)
-                        , "2021-12-01")
-        );
-        funcionarios.add(
-                new Funcionario(1
-                        , "João Mendes"
-                        , new Vendedor(28500.00)
-                        , "2021-12-01")
-        );
-        funcionarios.add(
-                new Funcionario(1
-                        , "Juliana Alves"
-                        , new Gerente()
-                        , "2017-07-01")
-        );
-        funcionarios.add(
-                new Funcionario(1
-                        , "Bento Albino"
-                        , new Gerente()
-                        , "2014-03-01")
-        );
+       
         Scanner scanner = new Scanner(System.in);
         int opcao = 0;
         while(opcao != 7){

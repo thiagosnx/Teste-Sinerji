@@ -26,25 +26,25 @@ public class ServicoFuncionario {
                         , "2015-12-01")
         );
         funcionarios.add(
-                new Funcionario(1
+                new Funcionario(3
                         , "Ana Silva"
                         , new Vendedor(26250.00)
                         , "2021-12-01")
         );
         funcionarios.add(
-                new Funcionario(1
+                new Funcionario(4
                         , "João Mendes"
                         , new Vendedor(28500.00)
                         , "2021-12-01")
         );
         funcionarios.add(
-                new Funcionario(1
+                new Funcionario(5
                         , "Juliana Alves"
                         , new Gerente()
                         , "2017-07-01")
         );
         funcionarios.add(
-                new Funcionario(1
+                new Funcionario(6
                         , "Bento Albino"
                         , new Gerente()
                         , "2014-03-01")
